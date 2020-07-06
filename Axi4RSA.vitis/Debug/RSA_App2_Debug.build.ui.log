@@ -1,0 +1,25 @@
+2020-07-06T14:43:14.193067900255-14:43:14 **** Incremental Build of configuration Debug for project RSA_App2 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/rsaTester.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsaTester.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ressw/Documents/School/ESE498/merge/ESE498/RSA2/export/RSA2/sw/RSA2/standalone_domain/bspinclude/include -MMD -MP -MF"src/rsaTester.d" -MT"src/rsaTester.o" -o "src/rsaTester.o" "../src/rsaTester.c"
+000-'Finished building: ../src/rsaTester.c'
+000-' '
+000-'Building target: RSA_App2.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ressw/Documents/School/ESE498/merge/ESE498/RSA2/export/RSA2/sw/RSA2/standalone_domain/bsplib/lib -o "RSA_App2.elf"  ./src/helloworld.o ./src/platform.o ./src/rsaTester.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: RSA_App2.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size RSA_App2.elf  |tee "RSA_App2.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  34732	   1544	  23256	  59532	   e88c	RSA_App2.elf
+000-'Finished building: RSA_App2.elf.size'
+000-' '
+00255-
+14:43:15 Build Finished (took 923ms)
+

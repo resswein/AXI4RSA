@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Axi4RSA.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../Axi4RSA.srcs/sources_1/bd/design_1/ipshared/2d50/hdl" --include "C:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../Axi4RSA.srcs/sources_1/new/Axi4RSA.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/adder32.v" \
+"../../../../Axi4RSA.srcs/sim_1/imports/axi4lite/axi4litemanager.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/retest/ESE498/tdc.srcs/sources_1/imports/axi4lite/axi4litesupporter.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/src/blockmem1r1w.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2r1w.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2r1wptr.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2rptr1w.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp_core.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/montprod.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/residue.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/shl32.v" \
+"../../../../Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/shr32.v" \
+"../../../../Axi4RSA.srcs/sim_1/new/Axi4RSA_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

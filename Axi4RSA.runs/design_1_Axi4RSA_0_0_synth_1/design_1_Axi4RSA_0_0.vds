@@ -1,0 +1,897 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul  6 13:25:15 2020
+# Process ID: 12000
+# Current directory: C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.runs/design_1_Axi4RSA_0_0_synth_1
+# Command line: vivado.exe -log design_1_Axi4RSA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Axi4RSA_0_0.tcl
+# Log file: C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.runs/design_1_Axi4RSA_0_0_synth_1/design_1_Axi4RSA_0_0.vds
+# Journal file: C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.runs/design_1_Axi4RSA_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_Axi4RSA_0_0.tcl -notrace
+Command: synth_design -top design_1_Axi4RSA_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_Axi4RSA_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13232 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1000.477 ; gain = 235.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_Axi4RSA_0_0' [c:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/bd/design_1/ip/design_1_Axi4RSA_0_0/synth/design_1_Axi4RSA_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Axi4RSA' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/new/Axi4RSA.v:23]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_CTRL bound to: 12'b000000001000 
+	Parameter ADDR_STATUS bound to: 12'b000000001100 
+	Parameter ADDR_MODULUS_LENGTH bound to: 12'b000000100000 
+	Parameter ADDR_EXPONENT_LENGTH bound to: 12'b000000100100 
+	Parameter ADDR_MODULUS_PTR_RST bound to: 12'b000000110000 
+	Parameter ADDR_MODULUS_DATA bound to: 12'b000000110100 
+	Parameter ADDR_EXPONENT_PTR_RST bound to: 12'b000001000000 
+	Parameter ADDR_EXPONENT_DATA bound to: 12'b000001000100 
+	Parameter ADDR_MESSAGE_PTR_RST bound to: 12'b000001010000 
+	Parameter ADDR_MESSAGE_DATA bound to: 12'b000001010100 
+	Parameter ADDR_RESULT_PTR_RST bound to: 12'b000001100000 
+	Parameter ADDR_RESULT_DATA bound to: 12'b000001100100 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter BUF1 bound to: 1 - type: integer 
+	Parameter WAIT bound to: 2 - type: integer 
+	Parameter BUF2 bound to: 3 - type: integer 
+	Parameter BUF3 bound to: 4 - type: integer 
+	Parameter READ1 bound to: 5 - type: integer 
+	Parameter READ2 bound to: 6 - type: integer 
+	Parameter READ3 bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Axi4LiteSupporter' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/retest/ESE498/tdc.srcs/sources_1/imports/axi4lite/axi4litesupporter.v:3]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter RD1 bound to: 1 - type: integer 
+	Parameter WR1 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Axi4LiteSupporter' (1#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/retest/ESE498/tdc.srcs/sources_1/imports/axi4lite/axi4litesupporter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'modexp' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp.v:59]
+	Parameter GENERAL_PREFIX bound to: 4'b0000 
+	Parameter ADDR_NAME0 bound to: 8'b00000000 
+	Parameter ADDR_NAME1 bound to: 8'b00000001 
+	Parameter ADDR_VERSION bound to: 8'b00000010 
+	Parameter ADDR_CTRL bound to: 8'b00001000 
+	Parameter CTRL_INIT_BIT bound to: 0 - type: integer 
+	Parameter CTRL_NEXT_BIT bound to: 1 - type: integer 
+	Parameter ADDR_STATUS bound to: 8'b00001100 
+	Parameter STATUS_READY_BIT bound to: 0 - type: integer 
+	Parameter ADDR_CYCLES_HIGH bound to: 8'b00010000 
+	Parameter ADDR_CYCLES_LOW bound to: 8'b00010100 
+	Parameter ADDR_MODULUS_LENGTH bound to: 8'b00100000 
+	Parameter ADDR_EXPONENT_LENGTH bound to: 8'b00100100 
+	Parameter ADDR_MODULUS_PTR_RST bound to: 8'b00110000 
+	Parameter ADDR_MODULUS_DATA bound to: 8'b00110100 
+	Parameter ADDR_EXPONENT_PTR_RST bound to: 8'b01000000 
+	Parameter ADDR_EXPONENT_DATA bound to: 8'b01000100 
+	Parameter ADDR_MESSAGE_PTR_RST bound to: 8'b01010000 
+	Parameter ADDR_MESSAGE_DATA bound to: 8'b01010100 
+	Parameter ADDR_RESULT_PTR_RST bound to: 8'b01100000 
+	Parameter ADDR_RESULT_DATA bound to: 8'b01100100 
+	Parameter DEFAULT_MODLENGTH bound to: 8'b10000000 
+	Parameter DEFAULT_EXPLENGTH bound to: 8'b10000000 
+	Parameter CORE_NAME0 bound to: 1836016741 - type: integer 
+	Parameter CORE_NAME1 bound to: 2020614176 - type: integer 
+	Parameter CORE_VERSION bound to: 808334642 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'modexp_core' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp_core.v:57]
+	Parameter MONTPROD_SELECT_ONE_NR bound to: 3'b000 
+	Parameter MONTPROD_SELECT_X_NR bound to: 3'b001 
+	Parameter MONTPROD_SELECT_Z_P bound to: 3'b010 
+	Parameter MONTPROD_SELECT_P_P bound to: 3'b011 
+	Parameter MONTPROD_SELECT_Z_ONE bound to: 3'b100 
+	Parameter MONTPROD_DEST_Z bound to: 2'b00 
+	Parameter MONTPROD_DEST_P bound to: 2'b01 
+	Parameter MONTPROD_DEST_NOWHERE bound to: 2'b10 
+	Parameter CTRL_IDLE bound to: 4'b0000 
+	Parameter CTRL_RESIDUE bound to: 4'b0001 
+	Parameter CTRL_CALCULATE_Z0 bound to: 4'b0010 
+	Parameter CTRL_CALCULATE_P0 bound to: 4'b0011 
+	Parameter CTRL_ITERATE bound to: 4'b0100 
+	Parameter CTRL_ITERATE_Z_P bound to: 4'b0101 
+	Parameter CTRL_ITERATE_P_P bound to: 4'b0110 
+	Parameter CTRL_ITERATE_END bound to: 4'b0111 
+	Parameter CTRL_CALCULATE_ZN bound to: 4'b1000 
+	Parameter CTRL_DONE bound to: 4'b1001 
+	Parameter EXPONATION_MODE_SECRET_SECURE bound to: 1'b0 
+	Parameter EXPONATION_MODE_PUBLIC_FAST bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'montprod' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/montprod.v:39]
+	Parameter DEBUG bound to: 0 - type: integer 
+	Parameter CTRL_IDLE bound to: 4'b0000 
+	Parameter CTRL_INIT_S bound to: 4'b0001 
+	Parameter CTRL_LOOP_INIT bound to: 4'b0010 
+	Parameter CTRL_LOOP_ITER bound to: 4'b0011 
+	Parameter CTRL_LOOP_BQ bound to: 4'b0100 
+	Parameter CTRL_L_CALC_SM bound to: 4'b0101 
+	Parameter CTRL_L_STALLPIPE_SM bound to: 4'b0110 
+	Parameter CTRL_L_CALC_SA bound to: 4'b0111 
+	Parameter CTRL_L_STALLPIPE_SA bound to: 4'b1000 
+	Parameter CTRL_L_CALC_SDIV2 bound to: 4'b1001 
+	Parameter CTRL_L_STALLPIPE_D2 bound to: 4'b1010 
+	Parameter CTRL_L_STALLPIPE_ES bound to: 4'b1011 
+	Parameter CTRL_EMIT_S bound to: 4'b1100 
+	Parameter CTRL_DONE bound to: 4'b1101 
+	Parameter SMUX_0 bound to: 2'b00 
+	Parameter SMUX_ADD_SM bound to: 2'b01 
+	Parameter SMUX_ADD_SA bound to: 2'b10 
+	Parameter SMUX_SHR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'blockmem1r1w' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/src/blockmem1r1w.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'blockmem1r1w' (2#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/src/blockmem1r1w.v:42]
+INFO: [Synth 8-6157] synthesizing module 'adder32' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/adder32.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'adder32' (3#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/adder32.v:40]
+INFO: [Synth 8-6157] synthesizing module 'shr32' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/shr32.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'shr32' (4#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/shr32.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'montprod' (5#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/montprod.v:39]
+INFO: [Synth 8-6157] synthesizing module 'residue' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/residue.v:48]
+	Parameter CTRL_IDLE bound to: 4'b0000 
+	Parameter CTRL_INIT bound to: 4'b0001 
+	Parameter CTRL_INIT_STALL bound to: 4'b0010 
+	Parameter CTRL_SHL bound to: 4'b0011 
+	Parameter CTRL_SHL_STALL bound to: 4'b0100 
+	Parameter CTRL_COMPARE bound to: 4'b0101 
+	Parameter CTRL_COMPARE_STALL bound to: 4'b0110 
+	Parameter CTRL_SUB bound to: 4'b0111 
+	Parameter CTRL_SUB_STALL bound to: 4'b1000 
+	Parameter CTRL_LOOP bound to: 4'b1001 
+INFO: [Synth 8-6157] synthesizing module 'shl32' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/shl32.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'shl32' (6#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/shl32.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'residue' (7#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/residue.v:48]
+INFO: [Synth 8-6157] synthesizing module 'blockmem2r1w' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2r1w.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'blockmem2r1w' (8#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2r1w.v:42]
+INFO: [Synth 8-6157] synthesizing module 'blockmem2r1wptr' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2r1wptr.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'blockmem2r1wptr' (9#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2r1wptr.v:45]
+INFO: [Synth 8-6157] synthesizing module 'blockmem2rptr1w' [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2rptr1w.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'blockmem2rptr1w' (10#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/blockmem2rptr1w.v:43]
+WARNING: [Synth 8-3848] Net exponation_mode_new in module/entity modexp_core does not have driver. [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp_core.v:158]
+WARNING: [Synth 8-3848] Net exponation_mode_we in module/entity modexp_core does not have driver. [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp_core.v:159]
+INFO: [Synth 8-6155] done synthesizing module 'modexp_core' (11#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp_core.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'modexp' (12#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/modexp.v:59]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/new/Axi4RSA.v:144]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/new/Axi4RSA.v:137]
+WARNING: [Synth 8-6014] Unused sequential element doneQ_reg was removed.  [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/new/Axi4RSA.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'Axi4RSA' (13#1) [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/new/Axi4RSA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_Axi4RSA_0_0' (14#1) [c:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/bd/design_1/ip/design_1_Axi4RSA_0_0/synth/design_1_Axi4RSA_0_0.v:58]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[7]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[6]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[5]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[4]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[3]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[2]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[1]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[0]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WVALID
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_BREADY
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1076.922 ; gain = 312.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1076.922 ; gain = 312.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1076.922 ; gain = 312.199
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1076.922 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1178.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 1181.105 ; gain = 2.176
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Axi4LiteSupporter'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/montprod.v:372]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.srcs/sources_1/imports/ESE498/RSA/pwm_info_leak-master/rsa_modular_exponentiation/src/montprod.v:310]
+INFO: [Synth 8-802] inferred FSM for state register 'montprod_ctrl_reg_reg' in module 'montprod'
+INFO: [Synth 8-5544] ROM "reset_word_index_MSW" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_mux_new" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'residue_ctrl_reg_reg' in module 'residue'
+INFO: [Synth 8-5544] ROM "reset_n_counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exponent_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exponent_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exponent_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "modulus_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "modulus_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "modulus_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "message_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "message_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "message_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exponent_length_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "modulus_length_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Axi4RSA'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+                     RD1 |                               01 |                             0001
+                  iSTATE |                               10 |                             0010
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Axi4LiteSupporter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                   00000000000001 |                             0000
+             CTRL_INIT_S |                   00000000000010 |                             0001
+          CTRL_LOOP_INIT |                   00000000000100 |                             0010
+          CTRL_LOOP_ITER |                   00000000001000 |                             0011
+            CTRL_LOOP_BQ |                   00000000010000 |                             0100
+          CTRL_L_CALC_SM |                   00000000100000 |                             0101
+     CTRL_L_STALLPIPE_SM |                   00000001000000 |                             0110
+          CTRL_L_CALC_SA |                   00000010000000 |                             0111
+     CTRL_L_STALLPIPE_SA |                   00000100000000 |                             1000
+       CTRL_L_CALC_SDIV2 |                   00001000000000 |                             1001
+     CTRL_L_STALLPIPE_D2 |                   00010000000000 |                             1010
+     CTRL_L_STALLPIPE_ES |                   00100000000000 |                             1011
+             CTRL_EMIT_S |                   01000000000000 |                             1100
+               CTRL_DONE |                   10000000000000 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'montprod_ctrl_reg_reg' using encoding 'one-hot' in module 'montprod'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                       0000000001 |                             0000
+               CTRL_INIT |                       0000000010 |                             0001
+         CTRL_INIT_STALL |                       0000000100 |                             0010
+                CTRL_SHL |                       0000001000 |                             0011
+          CTRL_SHL_STALL |                       0000010000 |                             0100
+            CTRL_COMPARE |                       0000100000 |                             0101
+      CTRL_COMPARE_STALL |                       0001000000 |                             0110
+                CTRL_SUB |                       0010000000 |                             0111
+          CTRL_SUB_STALL |                       0100000000 |                             1000
+               CTRL_LOOP |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'residue_ctrl_reg_reg' using encoding 'one-hot' in module 'residue'
+INFO: [Synth 8-3971] The signal "blockmem2r1w:/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "blockmem2rptr1w:/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                    BUF1 |                              001 |                             0001
+                    WAIT |                              010 |                             0010
+                    BUF2 |                              011 |                             0011
+                    BUF3 |                              100 |                             0100
+                   READ1 |                              101 |                             0101
+                   READ3 |                              110 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Axi4RSA'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 10    
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 19    
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 11    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---RAMs : 
+	               8K Bit         RAMs := 7     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 8     
+	   6 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	  14 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 7     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   7 Input     12 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 11    
+	   2 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 51    
+	   3 Input      1 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 6     
+	  11 Input      1 Bit        Muxes := 19    
+	  15 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Axi4LiteSupporter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+Module blockmem1r1w 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module adder32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module montprod 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	  14 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 7     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module residue 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module blockmem2r1w 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module blockmem2r1wptr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module blockmem2rptr1w 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module modexp_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	  11 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module modexp 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 25    
+	  15 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+Module Axi4RSA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 1     
+	   7 Input     12 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "modulus_length_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exponent_length_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exponent_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exponent_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "modulus_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "modulus_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "message_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "message_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result_mem_api_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result_mem_api_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3917] design design_1_Axi4RSA_0_0 has port S_AXI_BRESP[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Axi4RSA_0_0 has port S_AXI_BRESP[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Axi4RSA_0_0 has port S_AXI_RRESP[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Axi4RSA_0_0 has port S_AXI_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[7]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[6]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[5]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[4]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[3]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[2]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[1]
+WARNING: [Synth 8-3331] design modexp_core has unconnected port exponent_length[0]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_WVALID
+WARNING: [Synth 8-3331] design design_1_Axi4RSA_0_0 has unconnected port S_AXI_BREADY
+INFO: [Synth 8-3971] The signal "design_1_Axi4RSA_0_0/inst/mExp1/core_inst/residue_mem/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "design_1_Axi4RSA_0_0/inst/mExp1/core_inst/p_mem/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "design_1_Axi4RSA_0_0/inst/mExp1/core_inst/result_mem/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[31]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[30]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[29]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[28]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[27]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[26]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[25]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[24]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[23]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[22]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[21]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[20]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[19]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[18]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[17]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[16]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[15]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[14]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[13]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[12]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[11]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[10]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[9]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[8]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[7]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[6]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[5]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[4]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[3]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[2]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/b_one_reg_reg[1]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[0]' (FDCE) to 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[1]' (FDCE) to 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[2]' (FDCE) to 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[16]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[17]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[18]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[19]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[20]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[21]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[22]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[23]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[24]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[25]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[26]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[27]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[28]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[29]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[30]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[31]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[1]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[2]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[3]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[4]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[5]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[6]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[7]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[8]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[9]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[10]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[11]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[12]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[13]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/one_reg_reg[14]' (FDC) to 'inst/mExp1/core_inst/one_reg_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/mExp1/core_inst/one_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/mExp1/core_inst/exponation_mode_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[3]' (FDCE) to 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[4]' (FDCE) to 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[5]' (FDCE) to 'inst/mExp1/core_inst/residue_inst/nn_reg_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/mExp1/core_inst/residue_inst/nn_reg_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/montprod_select_reg_reg[0]' (FDCE) to 'inst/mExp1/core_inst/montprod_dest_reg_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++---------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object                                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/montprod_inst/s_mem/mem_reg | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/exponent_mem/mem_reg        | 256 x 32(READ_FIRST)   | W | R | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/modulus_mem/mem_reg         | 256 x 32(READ_FIRST)   | W | R | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/message_mem/mem_reg         | 256 x 32(READ_FIRST)   | W | R | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++---------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1181.105 ; gain = 416.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++---------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object                                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/montprod_inst/s_mem/mem_reg | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/exponent_mem/mem_reg        | 256 x 32(READ_FIRST)   | W | R | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/modulus_mem/mem_reg         | 256 x 32(READ_FIRST)   | W | R | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|design_1_Axi4RSA_0_0 | inst/mExp1/core_inst/message_mem/mem_reg         | 256 x 32(READ_FIRST)   | W | R | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++---------------------+--------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[7]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[6]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[0]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[1]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[2]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[3]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[4]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/mExp1/core_inst/result_mem/ptr_reg_reg_rep[5]' (FDCE) to 'inst/mExp1/core_inst/result_mem/ptr_reg_reg[5]'
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/montprod_inst/s_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/residue_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/residue_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/p_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/p_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/exponent_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/exponent_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/modulus_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/modulus_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/message_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/message_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/result_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/mExp1/core_inst/result_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1202.855 ; gain = 438.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop inst/lenQ_reg[31] is being inverted and renamed to inst/lenQ_reg[31]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    89|
+|2     |LUT1     |    42|
+|3     |LUT2     |   307|
+|4     |LUT3     |   127|
+|5     |LUT4     |   131|
+|6     |LUT5     |   156|
+|7     |LUT6     |   282|
+|8     |MUXF7    |    13|
+|9     |MUXF8    |     2|
+|10    |RAMB18E1 |     7|
+|11    |RAMB36E1 |     3|
+|12    |FDCE     |   250|
+|13    |FDPE     |     7|
+|14    |FDRE     |   132|
+|15    |FDSE     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------+------------------+------+
+|      |Instance              |Module            |Cells |
++------+----------------------+------------------+------+
+|1     |top                   |                  |  1549|
+|2     |  inst                |Axi4RSA           |  1549|
+|3     |    AxiSupporter1     |Axi4LiteSupporter |   345|
+|4     |    mExp1             |modexp            |   983|
+|5     |      core_inst       |modexp_core       |   954|
+|6     |        exponent_mem  |blockmem2r1wptr   |    49|
+|7     |        message_mem   |blockmem2r1wptr_0 |    25|
+|8     |        modulus_mem   |blockmem2r1wptr_1 |    34|
+|9     |        montprod_inst |montprod          |   310|
+|10    |          s_adder_sa  |adder32           |    32|
+|11    |          s_adder_sm  |adder32_3         |    32|
+|12    |          s_mem       |blockmem1r1w      |    66|
+|13    |        p_mem         |blockmem2r1w      |    77|
+|14    |        residue_inst  |residue           |   154|
+|15    |        residue_mem   |blockmem2r1w_2    |    44|
+|16    |        result_mem    |blockmem2rptr1w   |    36|
++------+----------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1207.813 ; gain = 443.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1207.813 ; gain = 338.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1207.813 ; gain = 443.090
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1219.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1223.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1223.383 ; gain = 758.828
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1223.383 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.runs/design_1_Axi4RSA_0_0_synth_1/design_1_Axi4RSA_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1223.383 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ressw/Documents/School/ESE498/RSA/Axi4RSA/Axi4RSA.runs/design_1_Axi4RSA_0_0_synth_1/design_1_Axi4RSA_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Axi4RSA_0_0_utilization_synth.rpt -pb design_1_Axi4RSA_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 13:26:28 2020...

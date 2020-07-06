@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Axi4RSA_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Axi4RSA_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="631584fs"></ZoomStartTime>
+      <ZoomEndTime time="952085fs"></ZoomEndTime>
+      <Cursor1Time time="685000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="194"></NameColumnWidth>
+      <ValueColumnWidth column_width="169"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="43" />
+   <wvobject type="divider" fp_name="divider144">
+      <obj_property name="label">Test Bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/S_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/S_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/S_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARADDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARADDR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/S_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/wrAddr" type="array">
+      <obj_property name="ElementShortName">wrAddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wrAddr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/wrData" type="array">
+      <obj_property name="ElementShortName">wrData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wrData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/wr" type="logic">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/wrDone" type="logic">
+      <obj_property name="ElementShortName">wrDone</obj_property>
+      <obj_property name="ObjectShortName">wrDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/rdAddr" type="array">
+      <obj_property name="ElementShortName">rdAddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rdAddr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/rdData" type="array">
+      <obj_property name="ElementShortName">rdData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/rdDone" type="logic">
+      <obj_property name="ElementShortName">rdDone</obj_property>
+      <obj_property name="ObjectShortName">rdDone</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider145">
+      <obj_property name="label">Axi4RSA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/lenQ" type="array">
+      <obj_property name="ElementShortName">lenQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lenQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/resQ" type="array">
+      <obj_property name="ElementShortName">resQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">resQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/doneQ" type="logic">
+      <obj_property name="ElementShortName">doneQ</obj_property>
+      <obj_property name="ObjectShortName">doneQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/cs" type="logic">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExAddr" type="array">
+      <obj_property name="ElementShortName">mExAddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mExAddr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExRData" type="array">
+      <obj_property name="ElementShortName">mExRData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mExRData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExWData" type="array">
+      <obj_property name="ElementShortName">mExWData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mExWData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider146">
+      <obj_property name="label">modexp</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/address" type="array">
+      <obj_property name="ElementShortName">address[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/start_new" type="logic">
+      <obj_property name="ElementShortName">start_new</obj_property>
+      <obj_property name="ObjectShortName">start_new</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/modulus_length_we" type="logic">
+      <obj_property name="ElementShortName">modulus_length_we</obj_property>
+      <obj_property name="ObjectShortName">modulus_length_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/exponent_length_we" type="logic">
+      <obj_property name="ElementShortName">exponent_length_we</obj_property>
+      <obj_property name="ObjectShortName">exponent_length_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/modulus_mem_api_rst" type="logic">
+      <obj_property name="ElementShortName">modulus_mem_api_rst</obj_property>
+      <obj_property name="ObjectShortName">modulus_mem_api_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/modulus_mem_api_wr" type="logic">
+      <obj_property name="ElementShortName">modulus_mem_api_wr</obj_property>
+      <obj_property name="ObjectShortName">modulus_mem_api_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/exponent_mem_api_rst" type="logic">
+      <obj_property name="ElementShortName">exponent_mem_api_rst</obj_property>
+      <obj_property name="ObjectShortName">exponent_mem_api_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/exponent_mem_api_wr" type="logic">
+      <obj_property name="ElementShortName">exponent_mem_api_wr</obj_property>
+      <obj_property name="ObjectShortName">exponent_mem_api_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/message_mem_api_rst" type="logic">
+      <obj_property name="ElementShortName">message_mem_api_rst</obj_property>
+      <obj_property name="ObjectShortName">message_mem_api_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/message_mem_api_wr" type="logic">
+      <obj_property name="ElementShortName">message_mem_api_wr</obj_property>
+      <obj_property name="ObjectShortName">message_mem_api_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/result_mem_api_rst" type="logic">
+      <obj_property name="ElementShortName">result_mem_api_rst</obj_property>
+      <obj_property name="ObjectShortName">result_mem_api_rst</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider171">
+      <obj_property name="label">modexp_core</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4RSA_tb/Axi4RSA1/mExp1/core_inst/modexp_ctrl_reg" type="array">
+      <obj_property name="ElementShortName">modexp_ctrl_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">modexp_ctrl_reg[3:0]</obj_property>
+   </wvobject>
+</wave_config>
